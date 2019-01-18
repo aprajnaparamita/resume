@@ -7,3 +7,6 @@
 [submodule "public/assets/fonts/ArchivoNarrow"]
 	path = public/assets/fonts/ArchivoNarrow
 	url = https://github.com/Omnibus-Type/ArchivoNarrow.git
+[submodule "public/assets/fonts/Gidole"]
+	path = public/assets/fonts/Gidole
+	url = https://github.com/larsenwork/Gidole.git

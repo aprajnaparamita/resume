@@ -1,22 +1,118 @@
-@ruby-red: "#C00";
-@contact-bg: "#C00";
+@ruby-red: #C00;
+@header-bg: #E84848;
+@contact-bg: #712424;
+@header: #FF4D4D;
 
-.font-face(@font-family, @filepath, @font-weight, @font-style){
+.font-face(@font-family, @font-weight, @font-style){
     @font-face {
         font-family: @font-family;
-        src: url('@{filepath}.eot');
-        src: url('@{filepath}.eot?#iefix') format('embedded-opentype'),
-            url('@{filepath}.woff2') format('woff2'),
-            url('@{filepath}.woff') format('woff'),
-            url('@{filepath}.ttf')  format('truetype'),
-            url('@{filepath}.svg#svgFontName') format('svg');
+        src: url('fonts/@{font-family}.eot');
+        src: url('fonts/@{font-family}.eot?#iefix') format('embedded-opentype'),
+            url('fonts/@{font-family}.woff2') format('woff2'),
+            url('fonts/@{font-family}.woff') format('woff'),
+            url('fonts/@{font-family}.ttf')  format('truetype'),
+            url('fonts/@{font-family}.svg#svgFontName') format('svg');
         font-weight:@font-weight;
         font-style:@font-style;
     }
 }
 
-.font-face('ArchivoBlack-Regular', 'ArchivoBlack-Regular', normal, normal);
+.font-face('ArchivoNarrow-Regular', normal, normal);
+.font-face('ArchivoBlack-Regular', bold, normal);
+.font-face('GlacialIndifference-Regular', normal, normal);
+.font-face('GlacialIndifference-Bold', bold, normal);
+.font-face('Gidole-Regular', normal, normal);
+
+article {
+  font-family: "Gidole-Regular";
+  background-color: #FEE;
+  width: 8.5in;
+  height: 11in;
+}
 
 h1 {
-  font-family: 'ArchivoBlack-Regular', sans-serif;
+  font-family: 'GlacialIndifference-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 44pt;
+  color: @contact-bg;
+  margin: 0in;
+  padding: 0in;
+  margin-top: 0.2in;
+}
+h2 {
+  fonrt-family: 'ArchivoNarrow-Regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 16.8pt;
+  color: @contact-bg;
+}
+.header-image {
+  width: 2.5in;
+  margin-top: 0in;
+  margin-bottom: 0.25in;
+}
+.janet-image {
+  clip-path: inset(1.25in 0in 1.5in 0in);
+  -webkit-transform: skewY(2.5deg);
+  position: absolute;
+  width: 3.25in;
+  z-index: 4;
+  left: -0.25in;
+  top: 1.15in;
+}
+.header {
+  background-color: @header-bg;
+  color: white;
+  padding-left: 4in;
+  padding-top: 0.3in;
+  padding-bottom: 0.5in;
+  z-index: 2;
+  position: absolute;
+  top: 0.25in;
+  width: 8.5in;
+}
+.contact-info {
+  padding-top: 0.25in;
+  background-color: @contact-bg;
+  color: white;
+  padding-left: 0.25in;
+  padding-right: 0.25in;
+  width: 2.5in;
+  height: 11in;
+  z-index: 3;
+  float: left;
+  position: absolute;
+  left: 0.25in;
+  text-align: left;
+  font-size: 14pt;
+  a, a#visited, a#hover {
+    text-decoration: none;
+    color: white;
+  }
+  a#hover {
+    text-decoration: underline;
+  }
+  p {
+    margin: 0in;
+    padding: 0in;
+    margin-bottom: 0.25in;
+    margin-left: 0.4in;
+    font-size: 12pt;
+  }
+  p.objective {
+    margin-left: 0in;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 12pt;
+  }
+}
+.contact-header {
+  i {
+    padding: 0.1in;
+    color: white;
+  }
+  font-weight: bold;
+  margin: 0in;
+  padding: 0in;
+  color: @header-bg;
+  text-align: left;
 }

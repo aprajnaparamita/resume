@@ -1,10 +1,129 @@
 @font-face {
-  font-family: 'ArchivoBlack-Regular';
-  src: url('ArchivoBlack-Regular.eot');
-  src: url('ArchivoBlack-Regular.eot?#iefix') format('embedded-opentype'), url('ArchivoBlack-Regular.woff2') format('woff2'), url('ArchivoBlack-Regular.woff') format('woff'), url('ArchivoBlack-Regular.ttf') format('truetype'), url('ArchivoBlack-Regular.svg#svgFontName') format('svg');
+  font-family: 'ArchivoNarrow-Regular';
+  src: url('fonts/ArchivoNarrow-Regular.eot');
+  src: url('fonts/ArchivoNarrow-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/ArchivoNarrow-Regular.woff2') format('woff2'), url('fonts/ArchivoNarrow-Regular.woff') format('woff'), url('fonts/ArchivoNarrow-Regular.ttf') format('truetype'), url('fonts/ArchivoNarrow-Regular.svg#svgFontName') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ArchivoBlack-Regular';
+  src: url('fonts/ArchivoBlack-Regular.eot');
+  src: url('fonts/ArchivoBlack-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/ArchivoBlack-Regular.woff2') format('woff2'), url('fonts/ArchivoBlack-Regular.woff') format('woff'), url('fonts/ArchivoBlack-Regular.ttf') format('truetype'), url('fonts/ArchivoBlack-Regular.svg#svgFontName') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlacialIndifference-Regular';
+  src: url('fonts/GlacialIndifference-Regular.eot');
+  src: url('fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/GlacialIndifference-Regular.woff2') format('woff2'), url('fonts/GlacialIndifference-Regular.woff') format('woff'), url('fonts/GlacialIndifference-Regular.ttf') format('truetype'), url('fonts/GlacialIndifference-Regular.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GlacialIndifference-Bold';
+  src: url('fonts/GlacialIndifference-Bold.eot');
+  src: url('fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/GlacialIndifference-Bold.woff2') format('woff2'), url('fonts/GlacialIndifference-Bold.woff') format('woff'), url('fonts/GlacialIndifference-Bold.ttf') format('truetype'), url('fonts/GlacialIndifference-Bold.svg#svgFontName') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gidole-Regular';
+  src: url('fonts/Gidole-Regular.eot');
+  src: url('fonts/Gidole-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Gidole-Regular.woff2') format('woff2'), url('fonts/Gidole-Regular.woff') format('woff'), url('fonts/Gidole-Regular.ttf') format('truetype'), url('fonts/Gidole-Regular.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+article {
+  font-family: "Gidole-Regular";
+  background-color: #FEE;
+  width: 8.5in;
+  height: 11in;
+}
 h1 {
-  font-family: 'ArchivoBlack-Regular', sans-serif;
+  font-family: 'GlacialIndifference-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 44pt;
+  color: #712424;
+  margin: 0in;
+  padding: 0in;
+  margin-top: 0.2in;
+}
+h2 {
+  fonrt-family: 'ArchivoNarrow-Regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 16.8pt;
+  color: #712424;
+}
+.header-image {
+  width: 2.5in;
+  margin-top: 0in;
+  margin-bottom: 0.25in;
+}
+.janet-image {
+  clip-path: inset(1.25in 0in 1.5in 0in);
+  -webkit-transform: skewY(2.5deg);
+  position: absolute;
+  width: 3.25in;
+  z-index: 4;
+  left: -0.25in;
+  top: 1.15in;
+}
+.header {
+  background-color: #e84848;
+  color: white;
+  padding-left: 4in;
+  padding-top: 0.3in;
+  padding-bottom: 0.5in;
+  z-index: 2;
+  position: absolute;
+  top: 0.25in;
+  width: 8.5in;
+}
+.contact-info {
+  padding-top: 0.25in;
+  background-color: #712424;
+  color: white;
+  padding-left: 0.25in;
+  padding-right: 0.25in;
+  width: 2.5in;
+  height: 11in;
+  z-index: 3;
+  float: left;
+  position: absolute;
+  left: 0.25in;
+  text-align: left;
+  font-size: 14pt;
+}
+.contact-info a,
+.contact-info a#visited,
+.contact-info a#hover {
+  text-decoration: none;
+  color: white;
+}
+.contact-info a#hover {
+  text-decoration: underline;
+}
+.contact-info p {
+  margin: 0in;
+  padding: 0in;
+  margin-bottom: 0.25in;
+  margin-left: 0.4in;
+  font-size: 12pt;
+}
+.contact-info p.objective {
+  margin-left: 0in;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 12pt;
+}
+.contact-header {
+  font-weight: bold;
+  margin: 0in;
+  padding: 0in;
+  color: #e84848;
+  text-align: left;
+}
+.contact-header i {
+  padding: 0.1in;
+  color: white;
 }
