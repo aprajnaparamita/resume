@@ -11,4 +11,5 @@ I converted it from Word's mishmash of tag soup using Nokogiri. Then
 hand-tweaked the less until it looked good. Then printed each page using
 Firefox and used combine_pdf to generate the final resume.
 
-[Link to the final PDF.](https://github.com/jeffus/resume/blob/master/Janet_Jeffus_resume_2019-01-18.pdf)
+[Link to the final
+PDF.](https://github.com/jjeffus/resume/raw/master/Janet_Jeffus_resume_2019-01-18.pdf)
