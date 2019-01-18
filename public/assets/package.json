@@ -1,0 +1,31 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Janet Jeffus's Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jjeffus/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "web",
+    "developer",
+    "ruby",
+    "on",
+    "rails"
+  ],
+  "author": "Janet Jeffus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjeffus/resume/issues"
+  },
+  "homepage": "https://github.com/jjeffus/resume#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "paper-css": "^0.4.1"
+  }
+}
