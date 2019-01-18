@@ -11,3 +11,4 @@ gem "guard-slim", require: true, :git => "https://github.com/attenzione/guard-sl
 gem "guard-bundler", require: false
 gem 'guard-livereload', '~> 2.5', require: false
 gem "nokogiri"
+gem 'combine_pdf'

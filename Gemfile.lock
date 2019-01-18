@@ -10,6 +10,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.2)
+    combine_pdf (1.0.15)
+      ruby-rc4 (>= 0.1.5)
     commonjs (0.2.7)
     em-dir-watcher (0.9.4)
     em-websocket (0.5.1)
@@ -71,6 +73,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     ref (2.0.0)
+    ruby-rc4 (0.1.5)
     ruby_dep (1.5.0)
     shellany (0.0.1)
     slim (4.0.1)
@@ -87,6 +90,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  combine_pdf
   guard
   guard-bundler
   guard-less
