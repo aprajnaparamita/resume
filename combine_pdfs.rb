@@ -9,5 +9,6 @@ pp pdfs
 pdfs.each do |file|
   pdf << CombinePDF.load(file)
 end
-pdf.save "Janet_Jeffus_resume_#{Time.now.strftime("%Y-%m-%d")}.pdf"
-
+file = "Janet_Jeffus_resume_#{Time.now.strftime("%Y-%m-%d")}.pdf"
+puts "writing: #{file}"
+pdf.save file

@@ -7,6 +7,19 @@ html lang="en"
     link href="assets/node_modules/paper-css/paper.css" rel="stylesheet" /
     link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"
     link href="assets/style.css" rel="stylesheet" /
+    script src="assets/node_modules/jquery/dist/jquery.min.js"
+    javascript:
+      $(document).ready(function(){
+        var links = [];
+        $.each($('a'),
+          function (i,e) {
+            console.log(i,e);
+            links.push([e.innerText, $(e).attr('href'), e.offsetLeft, e.offsetTop, e.offsetWidth, e.offsetHeight]);
+          }
+        );
+        console.log(links);
+        console.log(JSON.stringify(links));
+      })
   body.letter
     section.sheet
       article.page1
@@ -42,23 +55,35 @@ html lang="en"
             a href="https://github.com/jjeffus"
               | jjeffus
           div.contact-header
+            i class="fab fa-linkedin"
+            | LINKEDIN
+          p
+            a href="https://www.linkedin.com/in/janet-jeffus-b0709720/"
+              |  Janet Jeffus
+          div.contact-header
+            i class="fab fa-twitter"
+            | TWITTER
+          p
+            a href="http://jjeff.us"
+              |  janetjeffus
+          div.contact-header
             i class="fas fa-globe-americas"
             | WEBSITE
           p
             a href="http://jjeff.us"
               |  jjeff.us
           p.made-with
-            | This résumé was made with CSS3, HTML5, Ruby,
+            | This résumé was hand-written and designed by Janet using CSS3, HTML5, Ruby, Perl,
             a> href="https://github.com/guard/guard"
-              | guard,
+              | &nbsp;guard,
             a> href="https://github.com/cognitom/paper-css"
               | paper.css,
             a> href="https://fontawesome.com/"
               | fontawesome,
             a> href="https://transfonter.org/"
-              | transfonter
+              | transfonter,
             span>
-              | and
+              | PDF::API2 and
             a> href="https://github.com/boazsegev/combine_pdf"
               | combine_pdf. Among other things. Check out
             a> href="https://github.com/jjeffus/resume"
@@ -97,10 +122,4 @@ html lang="en"
             | EDUCATION
           h4
             | Missouri University of Science and Technology
-          h5
-            | English - Rolla, Missouri - 3.8 GPA
           // | A go-getter take no prisoners attitude that fits so well with startup culture. I solve problems, look for ways I to make my team members lives easier and innovate. My video upload mod_perl code had a progress bar 5 years before YouTube. Teams I have led won 1st at the Hack for LA, Hack for Equality, Wonder Women Tech and Google Kansas City VUI hack. I strive to be my best and bring value by rolling my sleeves up and putting in the hard work to make a win for myself and all stakeholders.
-          h3
-            | REFERENCES
-          h5
-            | [Available upon request.]
