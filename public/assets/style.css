@@ -1,3 +1,10 @@
+body {
+  width: 8.5in;
+}
+@page {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: 'ArchivoNarrow-Regular';
   src: url('fonts/ArchivoNarrow-Regular.eot');
