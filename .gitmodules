@@ -1,0 +1,9 @@
+[submodule "public/assets/fonts/ArchivoBlack"]
+	path = public/assets/fonts/ArchivoBlack
+	url = https://github.com/Omnibus-Type/ArchivoBlack.git
+[submodule "public/assets/fonts/Archivo"]
+	path = public/assets/fonts/Archivo
+	url = https://github.com/Omnibus-Type/Archivo.git
+[submodule "public/assets/fonts/ArchivoNarrow"]
+	path = public/assets/fonts/ArchivoNarrow
+	url = https://github.com/Omnibus-Type/ArchivoNarrow.git
