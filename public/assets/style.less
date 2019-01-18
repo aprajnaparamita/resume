@@ -17,6 +17,16 @@
     }
 }
 
+// Bit of a hack to ensure colors are mucked with during printing.
+.background-color(@color){
+  background-color: unset;
+  box-shadow: inset 0 0 0 1000px @color;
+}
+.color(@color){
+  text-shadow: 0 0 @color;
+  color: transparent;
+}
+
 .font-face('ArchivoNarrow-Regular', normal, normal);
 .font-face('ArchivoBlack-Regular', bold, normal);
 .font-face('GlacialIndifference-Regular', normal, normal);
@@ -25,7 +35,7 @@
 
 article {
   font-family: "Gidole-Regular";
-  background-color: #FEE;
+  .background-color(#FEE);
   width: 8.5in;
   height: 11in;
 }
@@ -34,7 +44,7 @@ h1 {
   font-family: 'GlacialIndifference-Bold', sans-serif;
   text-transform: uppercase;
   font-size: 44pt;
-  color: @contact-bg;
+  .color(@contact-bg);
   margin: 0in;
   padding: 0in;
   margin-top: 0.2in;
@@ -43,12 +53,26 @@ h2 {
   fonrt-family: 'ArchivoNarrow-Regular', sans-serif;
   text-transform: uppercase;
   font-size: 16.8pt;
-  color: @contact-bg;
+  .color(@contact-bg);
+}
+h3,h4,h5 {
+  text-transform: uppercase;
+  .color(@contact-bg);
+}
+h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  .color(black);
 }
 .header-image {
   width: 2.5in;
   margin-top: 0in;
-  margin-bottom: 0.25in;
+  margin-bottom: 0.35in;
+}
+.made-with {
+  width: 2.5in;
 }
 .janet-image {
   clip-path: inset(1.25in 0in 1.5in 0in);
@@ -60,8 +84,8 @@ h2 {
   top: 1.15in;
 }
 .header {
-  background-color: @header-bg;
-  color: white;
+  .background-color(@header-bg);
+  .color(white);
   padding-left: 4in;
   padding-top: 0.3in;
   padding-bottom: 0.5in;
@@ -72,8 +96,8 @@ h2 {
 }
 .contact-info {
   padding-top: 0.25in;
-  background-color: @contact-bg;
-  color: white;
+  .background-color(@contact-bg);
+  .color(white);
   padding-left: 0.25in;
   padding-right: 0.25in;
   width: 2.5in;
@@ -86,7 +110,7 @@ h2 {
   font-size: 14pt;
   a, a#visited, a#hover {
     text-decoration: none;
-    color: white;
+    .color(white);
   }
   a#hover {
     text-decoration: underline;
@@ -108,11 +132,22 @@ h2 {
 .contact-header {
   i {
     padding: 0.1in;
-    color: white;
+    .color(white);
   }
   font-weight: bold;
   margin: 0in;
   padding: 0in;
-  color: @header-bg;
+  .color(@header-bg);
   text-align: left;
+}
+.experience {
+  position: absolute;
+  left: 3.25in;
+  top: 2.5in;
+  padding: 0.25in;
+  p {
+    font-size: 11pt;
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }

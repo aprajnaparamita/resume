@@ -35,7 +35,8 @@
 }
 article {
   font-family: "Gidole-Regular";
-  background-color: #FEE;
+  background-color: unset;
+  box-shadow: inset 0 0 0 1000px #ffeeee;
   width: 8.5in;
   height: 11in;
 }
@@ -43,7 +44,8 @@ h1 {
   font-family: 'GlacialIndifference-Bold', sans-serif;
   text-transform: uppercase;
   font-size: 44pt;
-  color: #712424;
+  text-shadow: 0 0 #712424;
+  color: transparent;
   margin: 0in;
   padding: 0in;
   margin-top: 0.2in;
@@ -52,12 +54,33 @@ h2 {
   fonrt-family: 'ArchivoNarrow-Regular', sans-serif;
   text-transform: uppercase;
   font-size: 16.8pt;
-  color: #712424;
+  text-shadow: 0 0 #712424;
+  color: transparent;
+}
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  text-shadow: 0 0 #712424;
+  color: transparent;
+}
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  text-shadow: 0 0 #000000;
+  color: transparent;
 }
 .header-image {
   width: 2.5in;
   margin-top: 0in;
-  margin-bottom: 0.25in;
+  margin-bottom: 0.35in;
+}
+.made-with {
+  width: 2.5in;
 }
 .janet-image {
   clip-path: inset(1.25in 0in 1.5in 0in);
@@ -69,8 +92,10 @@ h2 {
   top: 1.15in;
 }
 .header {
-  background-color: #e84848;
-  color: white;
+  background-color: unset;
+  box-shadow: inset 0 0 0 1000px #e84848;
+  text-shadow: 0 0 #ffffff;
+  color: transparent;
   padding-left: 4in;
   padding-top: 0.3in;
   padding-bottom: 0.5in;
@@ -81,8 +106,10 @@ h2 {
 }
 .contact-info {
   padding-top: 0.25in;
-  background-color: #712424;
-  color: white;
+  background-color: unset;
+  box-shadow: inset 0 0 0 1000px #712424;
+  text-shadow: 0 0 #ffffff;
+  color: transparent;
   padding-left: 0.25in;
   padding-right: 0.25in;
   width: 2.5in;
@@ -98,7 +125,8 @@ h2 {
 .contact-info a#visited,
 .contact-info a#hover {
   text-decoration: none;
-  color: white;
+  text-shadow: 0 0 #ffffff;
+  color: transparent;
 }
 .contact-info a#hover {
   text-decoration: underline;
@@ -120,10 +148,23 @@ h2 {
   font-weight: bold;
   margin: 0in;
   padding: 0in;
-  color: #e84848;
+  text-shadow: 0 0 #e84848;
+  color: transparent;
   text-align: left;
 }
 .contact-header i {
   padding: 0.1in;
-  color: white;
+  text-shadow: 0 0 #ffffff;
+  color: transparent;
+}
+.experience {
+  position: absolute;
+  left: 3.25in;
+  top: 2.5in;
+  padding: 0.25in;
+}
+.experience p {
+  font-size: 11pt;
+  text-align: justify;
+  text-justify: inter-word;
 }
