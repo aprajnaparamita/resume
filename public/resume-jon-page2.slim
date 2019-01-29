@@ -1,0 +1,116 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8" /
+    title Janet Jeffus Resume
+    link href="assets/node_modules/normalize.css/normalize.css" rel="stylesheet" /
+    link href="assets/node_modules/paper-css/paper.css" rel="stylesheet" /
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"
+    link href="assets/style.css" rel="stylesheet" /
+    script src="assets/node_modules/jquery/dist/jquery.min.js"
+    javascript:
+      // Print the x/y offsets of the links for add_links_to_pdf.pl
+      $(document).ready(function(){
+        var links = [];
+        $.each($('a'),
+          function (i,e) {
+            console.log(i,e);
+            links.push([e.innerText, $(e).attr('href'), e.offsetLeft, e.offsetTop, e.offsetWidth, e.offsetHeight]);
+          }
+        );
+        console.log(links);
+        console.log(JSON.stringify(links));
+      })
+  body.letter
+    section.sheet
+      article.page1
+        div.header
+          h1 Janet Jeffus
+          h2 Senior Ruby on Rails Developer
+        div.contact-info
+          img.header-image src="assets/img/ruby-on-rails.png"
+          // img.janet-image src="assets/img/janet.jpg"
+          div.contact-header
+            i class="fab fa-github"
+            | GITHUB
+          p
+            a href="https://github.com/jjeffus"
+              | jjeffus
+          div.contact-header
+            i class="fab fa-linkedin"
+            | LINKEDIN
+          p
+            a href="https://www.linkedin.com/in/janet-jeffus-b0709720/"
+              |  Janet Jeffus
+          div.contact-header
+            i class="fab fa-twitter"
+            | TWITTER
+          p
+            a href="http://jjeff.us"
+              |  janetjeffus
+          div.contact-header
+            i class="fas fa-globe-americas"
+            | WEBSITE
+          p
+            a href="http://jjeff.us"
+              |  jjeff.us
+          / p.made-with
+          /   | This résumé was hand-written and designed by Janet using CSS3, HTML5, Ruby, Perl,
+          /   a> href="https://github.com/guard/guard"
+          /     | &nbsp;guard,
+          /   a> href="https://github.com/cognitom/paper-css"
+          /     | paper.css,
+          /   a> href="https://fontawesome.com/"
+          /     | fontawesome,
+          /   a> href="https://transfonter.org/"
+          /     | transfonter,
+          /   span>
+          /     | PDF::API2 and
+          /   a> href="https://github.com/boazsegev/combine_pdf"
+          /     | combine_pdf. Among other things. Check out
+          /   a> href="https://github.com/jjeffus/resume"
+          /     | the source on Github!
+        div.experience
+          h3
+            | CAREER PROGRESSION
+
+            h4
+              | Senior Ruby Developer
+            h5
+              | Local Lighthouse, Inc. - Costa Mesa, CA
+            h6
+              | Sep 2014 - Mar 2015
+            p
+              | Led the integration and development of a big data scale business directory. As well as acquired large-scale marketing lead data from a diverse and cross platform arena of sources that led to a significant increase in leads acquired.
+            ul
+              li Designed custom local search directory in RoR integrating MongoDB and Elasticsearch supporting 65 million businesses.
+              li Developed extensive AWS based web spidering code for acquiring leads from local search directory leading to 98% of revenue coming from this source.
+              li Integrated Net Versa, LLC. local search technology acquired into existing business processes.
+              li Led daily scrums. Trained and mentored back-end team.
+
+          h4
+            | Chief Technology Officer - Lead RoR Developer
+          h5
+            | Net Versa, LLC. - Irvine, CA
+          h6
+            | Mar 2012 - Nov 2014
+          p
+            | Chief Technology Officer and System Architect of a complex suite of products that automated business listings on local search directories. Lead a team of up to 15 developers in building from the ground up a multi-platform product base. 180,000 lines of code being written in five languages for three operating systems in 18 repositories. The technology grew the customer base by over 200%.
+          ul
+            li Developed 200+ web autation scripts for common actions in Ruby using Selenium/Webdriver for major websties.
+            li Hired and managed of team of 15 developers in 6 countries.
+            li Wrote custom Ruby MRI with win32 C and PureBasic code to deploy software on Windows machines with custom NSIS installer.
+            li Led daily scrums. Created and managed Pivotal Tracker stories to match stakeholder expectations.
+
+          h4
+            | Founder - Lead RoR Developer
+          h5
+            | Tradebitcoin.com, LLC. - Irvine, CA
+          h6
+            | Oct 2009 - Jan 2013
+          p
+            | First to market and market leader of online local Bitcoin trading that sounded a clarion call for a local-gap trading solution within the Bitcoin economy.
+          ul
+            li Created wireframes, Photoshop mockups and final custom HTML/CSS layout.
+            li Wrote Ruby on Rails backend with admin panel for managing and viewing users.
+            li Designed logo, pitch and all compnay materials.
