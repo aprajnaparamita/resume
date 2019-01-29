@@ -7,14 +7,23 @@ use Data::Dumper qw/Dumper/;
 # Copied these from the console.log for $('a') link list using the
 # offsetLeft/offsetTop Javascript properties.
 
-my $links = [
-  ["(310) 904-3836","tel:+13109043836",62,386,104,19],
-  ["speak\@jjeff.us","mailto:speak\@jjeff.us",62,443,97,19],
-  ["jjeffus","https://github.com/jjeffus",62,499,42,19],
-  ["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,555,83,19],
-  ["janetjeffus","https://twitter.com/janetjeffus",62,612,71,19],
-  ["jjeff.us","http://jjeff.us",62,668,45,19],
-  ["the source on Github!","https://github.com/jjeffus/resume",20,1017,230,19]];
+
+my $links  = [
+  ["jjeffus","https://github.com/jjeffus",62,102,50,19],
+  ["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,158,94,19],
+  ["janetjeffus","http://jjeff.us",62,214,86,19],
+  ["jjeff.us","http://jjeff.us",62,271,54,19],
+  ["the source on Github!","https://github.com/jjeffus/resume",20,810,230,19]
+];
+
+#my $links = [
+#  ["(310) 904-3836","tel:+13109043836",62,386,104,19],
+#  ["speak\@jjeff.us","mailto:speak\@jjeff.us",62,443,97,19],
+#  ["jjeffus","https://github.com/jjeffus",62,499,42,19],
+#  ["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,555,83,19],
+#  ["janetjeffus","https://twitter.com/janetjeffus",62,612,71,19],
+#  ["jjeff.us","http://jjeff.us",62,668,45,19],
+#  ["the source on Github!","https://github.com/jjeffus/resume",20,1017,230,19]];
   #["guard,","https://github.com/guard/guard",108,18,43,19],
   #["paper.css,","https://github.com/cognitom/paper-css",172,18,68,19],
   #["fontawesome,","https://fontawesome.com/",0,37,95,19],
@@ -49,10 +58,11 @@ print "x: $llx y: $lly w: $urx h $ury\n";
 
 foreach my $link (@$links) {
   my $dims = [$link->[2],
-              ($ury - ($link->[3]) * 0.75),
+              ($ury - ($link->[3]) * 0.75) - 155,
               $link->[2]+$link->[4],
-              ($ury - (($link->[3] + $link->[5]) * 0.75))];
+              ($ury - (($link->[3] + $link->[5]) * 0.75)) - 155];
   draw_url($pdfa2, 2, $dims, $link->[1]);
+  draw_url($pdfa2, 3, $dims, $link->[1]);
 }
 
 $pdfa2->saveas("final.pdf");
