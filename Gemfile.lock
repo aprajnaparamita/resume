@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/attenzione/guard-slim.git
-  revision: 9377e162dbcd1fa4bfb0a53d0e3d9d1ea8462690
+  remote: https://github.com/indrekj/guard-slim.git
+  revision: 4c5913fc858fd8e46c065878c5844abe2d91bf7d
   specs:
     guard-slim (0.0.1)
       guard (>= 1.0)
@@ -104,4 +104,4 @@ DEPENDENCIES
   therubyracer
 
 BUNDLED WITH
-   1.16.6
+   2.1.4

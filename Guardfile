@@ -30,9 +30,9 @@ guard :bundler do
 end
 
 
-guard "slim" do
-  watch(%r{^public/.+(\.slim)$})
-end
+#guard "slim" do
+#  watch(%r{^public/.+(\.slim)$})
+#end
 
 # NOTE: the subpath hack using a regexp group no longer works
 # - instead, use the patterns option, e.g. change:
