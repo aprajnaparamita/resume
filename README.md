@@ -12,4 +12,4 @@ hand-tweaked the less until it looked good. Then printed each page using
 Firefox and used combine_pdf to generate the final resume.
 
 [Link to the final
-PDF.](https://github.com/jjeffus/resume/raw/master/Janet_Jeffus_resume_2019-01-23.pdf)
+PDF.](https://github.com/jjeffus/resume/raw/master/Janet_Jeffus_resume_2020-04-24.pdf)
