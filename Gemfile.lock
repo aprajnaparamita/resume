@@ -44,7 +44,7 @@ GEM
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
     http_parser.rb (0.6.0)
-    json (2.1.0)
+    json (2.3.1)
     less (2.6.0)
       commonjs (~> 0.2.7)
     libv8 (3.16.14.19)
