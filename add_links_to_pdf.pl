@@ -7,14 +7,19 @@ use Data::Dumper qw/Dumper/;
 # Copied these from the console.log for $('a') link list using the
 # offsetLeft/offsetTop Javascript properties.
 
+my $links = [["(573) 340-9341","tel:+13109043836",62,405,104,19],['speak@jjeff.us','mailto:speak@jjeff.us',62,461,96,19],["jjeffus","https://github.com/jjeffus",62,517,41,19],["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,574,83,19],["janetjeffus","http://twitter.com/janetjeffus",62,630,71,19],["jjeff.us","http://jjeff.us",62,686,44,19]];
 
-my $links  = [
-  ["jjeffus","https://github.com/jjeffus",62,102,50,19],
-  ["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,158,94,19],
-  ["janetjeffus","http://jjeff.us",62,214,86,19],
-  ["jjeff.us","http://jjeff.us",62,271,54,19],
-  ["the source on Github!","https://github.com/jjeffus/resume",20,810,230,19]
-];
+# This shows the link at the botton of the third page (on all the pages but that's ok.)
+
+push @$links, ["the source on Github!","https://github.com/jjeffus/resume",20,780,230,19];
+
+#my $links  = [
+#  ["jjeffus","https://github.com/jjeffus",62,102,50,19],
+#  ["Janet Jeffus","https://www.linkedin.com/in/janet-jeffus-b0709720/",62,158,94,19],
+#  ["janetjeffus","http://jjeff.us",62,214,86,19],
+#  ["jjeff.us","http://jjeff.us",62,271,54,19],
+#  ["the source on Github!","https://github.com/jjeffus/resume",20,810,230,19]
+#];
 
 #my $links = [
 #  ["(310) 904-3836","tel:+13109043836",62,386,104,19],

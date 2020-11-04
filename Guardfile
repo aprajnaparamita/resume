@@ -16,7 +16,6 @@
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 #
 
-
 guard :bundler do
   require 'guard/bundler'
   require 'guard/bundler/verify'
@@ -30,9 +29,9 @@ guard :bundler do
 end
 
 
-#guard "slim" do
-#  watch(%r{^public/.+(\.slim)$})
-#end
+guard :slim, :all_on_start => true do
+  watch(%r{^public/.+(\.slim)$})
+end
 
 # NOTE: the subpath hack using a regexp group no longer works
 # - instead, use the patterns option, e.g. change:
