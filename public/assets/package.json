@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jjeffus/resume#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1",
     "paper-css": "^0.4.1"
   }
